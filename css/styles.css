@@ -105,8 +105,6 @@ header {
 .auth-nav svg {
   fill: #757575;
   transition: fill 250ms var(--animation-timfun);
-
-  outline: 1px solid var(--help-color);
 }
 .auth-nav .envelope {
   margin-right: 10px;
@@ -115,7 +113,8 @@ header {
   margin-right: 10px;
   margin-left: 30px;
 }
-.auth-nav a:hover svg {
+.auth-nav a:hover svg,
+.auth-nav a:focus svg {
   fill: var(--accent-color);
 }
 
@@ -319,14 +318,16 @@ section.hero {
 
   transition: background-color 250ms var(--animation-timfun);
 }
-.team-list-links a:hover {
+.team-list-links a:hover,
+.team-list-links a:focus {
   background-color: var(--accent-color);
 }
 .team-list-links svg {
   fill: #afb1b8;
   transition: fill 250ms var(--animation-timfun);
 }
-.team-list-links a:hover svg {
+.team-list-links a:hover svg,
+.team-list-links a:focus svg {
   fill: #ffffff;
 }
 
@@ -365,7 +366,8 @@ section.hero {
   fill: #afb1b8;
   transition: fill 250ms var(--animation-timfun);
 }
-.clients-list a:hover svg {
+.clients-list a:hover svg,
+.clients-list a:focus svg {
   fill: var(--accent-color);
 }
 
@@ -441,7 +443,8 @@ footer h2 {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--animation-timfun);
 }
-.footer-links-list a:hover {
+.footer-links-list a:hover,
+.footer-links-list a:focus {
   background-color: var(--accent-color);
 }
 
@@ -475,7 +478,7 @@ section.projects {
   margin-right: 8px;
 }
 .button-list .button:hover,
-.button:focus {
+.button-list .button:focus {
   color: var(--special-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
